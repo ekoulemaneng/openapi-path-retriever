@@ -1,6 +1,6 @@
 {
   "name": "openapi-path-retriever",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typescript package that enables to retrieve the path of an OpenApi specification from the url of an http request. For 3.1.x and 3.0.x OpenAPI versions.",
   "keywords": [
     "openapi 3.x",
