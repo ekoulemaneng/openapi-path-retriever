@@ -36,5 +36,8 @@ const main = async () => {
 main()
 ```
 
+## License
+This package is licensed under the [MIT License](https://opensource.org/licenses/mit).
+
 ## Contact
 If you have any questions or issues, please contact the package maintainer at ekoulemaneng@gmail.com.
