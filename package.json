@@ -58,5 +58,6 @@
   "bugs": {
     "url": "https://github.com/ekoulemaneng/openapi-path-retriever/issues"
   },
-  "homepage": "https://github.com/ekoulemaneng/openapi-path-retriever#readme"
+  "homepage": "https://github.com/ekoulemaneng/openapi-path-retriever#readme",
+  "license": "MIT"
 }
