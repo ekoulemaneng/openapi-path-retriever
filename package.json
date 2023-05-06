@@ -1,7 +1,7 @@
 {
   "name": "openapi-path-retriever",
   "version": "1.0.2",
-  "description": "Typescript package that enables to retrieve the path of an OpenApi specification from the url of an http request. For 3.1.x and 3.0.x OpenAPI versions.",
+  "description": "Typescript package to retrieve the path of an OpenApi specification from the url of an http request. For 3.1.x and 3.0.x OpenAPI versions.",
   "keywords": [
     "openapi 3.x",
     "typescript",
@@ -24,14 +24,14 @@
     "build": "tsc"
   },
   "dependencies": {
-    "path-to-regexp": "^6.2.1",
-    "yaml": "^2.2.2"
+    "path-to-regexp": "^6.2.1"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",
     "mocha": "^10.2.0",
     "nodemon": "^2.0.22",
     "openapi-objects-types": "^1.1.0",
+    "openapi-schema-retriever": "^1.0.1",
     "random-string-builder": "^1.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"

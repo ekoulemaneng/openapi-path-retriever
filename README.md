@@ -12,17 +12,18 @@ yarn add openapi-path-retriever
 
 ## Usage
 ```typescript
-import { specBuilder, pathRetriever } from 'openapi-path-retriever'
+import pathRetriever from 'openapi-path-retriever'
+import schemaRetriever from 'openapi-schema-retriever'
 
 const main = async () => {
 
-    /* First, by specBuilder, get, check and parse the openapi specification that can be an object or an file path string.
+    /* schemaRetriever gets, checks and parses the openapi specification that can be an object or an file path string.
      * If the specification input is a file path string, a second argument standing for the current working directory is mandatory.
      * We recommend to use '__dirname' as second argument.
      * The file must be either a json, a yaml or a yml file. 
-     * specBuilder returns an object in accordance with OpenAPI scpecification.
+     * schemaRetriever returns an object in accordance with OpenAPI scpecification.
     */
-    const schema = await specBuilder('./openapi.yaml', __dirname)
+    const schema = await schemaRetriever('./openapi.yaml', __dirname)
 
     // Setup url input
     const url = 'https://balanceplatform-api-test.adyen.com/btl/v3/transactions/dhdjduffjjfj'
@@ -30,7 +31,7 @@ const main = async () => {
     /* From the got-above schema and the url, retrieve the endpoint path that matches in the schema. 
      * You will either a string (if there is an endpoint path) or null (if there is no).
     */
-    const path = pathRetriever(schema, url)
+    const path = pathRetriever(schema, url) // => '/transactions/{id}' or null for example
 }
 
 main()
